@@ -1,7 +1,5 @@
-let input1 = prompt("Digite um valor numerico:\n");
-    let a = parseInt(input1);
-let input2 = prompt("Digite o segundo valor numerico:\n");
-    let b = parseInt(input2);
+let input1 = +prompt("Digite um valor numerico:\n");
+let input2 = +prompt("Digite o segundo valor numerico:\n");
 let op = prompt("Digite o simbolo da operacao a ser realizada (+, -, *, /):\n");
 
 const maiorque = 'É maior que 10';
@@ -23,22 +21,22 @@ function alertaResult(resultado) {
 switch(op){
 
     case  '+':
-        resultado = a + b;
+        resultado = input1 + input2;
         alertaResult(resultado);
         break;
 
     case '-':
-        resultado = a - b;
+        resultado = input1 - input2;
        alertaResult(resultado);
         break;
 
     case '/':
-        resultado = a / b;
+        resultado = input1 / input2;
         alertaResult(resultado);
         break;
 
     case '*':
-        resultado = a * b;
+        resultado = input1 * input2;
         alertaResult(resultado);
         break;
 
